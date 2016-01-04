@@ -1,0 +1,18 @@
+<h1 class="md-headline">For reward, here is a list of awesome computer scientists!</h1>
+<p class="md-subhead">You want more? Add them yourself!</p>
+<md-divider></md-divider>
+
+<form (submit)="addName()">
+  <md-input-container layout="row">
+    <button md-button [disabled]="nameModel?.length==0" class="md-primary" type="submit">Add</button>
+    <input type="text" placeholder="Awesome Computer Scientist" id="label" [(ngModel)]="nameModel" flex>
+  </md-input-container>
+</form>
+
+<md-list>
+  <md-list-item *ngFor="#person of list.get()">
+    <img [alt]="person.name" [src]="'./assets/avatars/' + person.image + '.svg'" class="md-avatar" />
+    <p>{{ person.name }}</p>
+  </md-list-item>
+</md-list>
+

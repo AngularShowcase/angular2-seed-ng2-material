@@ -1,0 +1,14 @@
+<section class="material-app-content">
+  <md-toolbar class="md-whiteframe-z1">
+    <nav class="md-toolbar-tools">
+      <button md-button alt="Home" class="md-icon-button" [routerLink]="['/Home']"><i class="" md-icon>home</i></button>
+      <h1 flex>My Angular2 App</h1>
+      <button md-button [routerLink]="['/About']">About</button>
+    </nav>
+  </md-toolbar>
+
+  <md-content layout-padding layout="column" layout-align="center center">
+    <router-outlet></router-outlet>
+  </md-content>
+
+</section>
