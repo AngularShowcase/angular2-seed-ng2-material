@@ -1,3 +1,7 @@
+# WARNING
+
+This project is no longer maintained. For Angular 2 starter take a look at the [angular2-seed](https://github.com/mgechev/angular2-seed), that this project is based on.
+
 # Introduction
 
 An example of how to integrate [Material Components for Angular2](https://github.com/justindujardin/ng2-material) by [Justin DuJardin - justindujardin](https://github.com/justindujardin)
